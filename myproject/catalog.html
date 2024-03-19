@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+    <header>
+        <div class="container">
+    <div class="co-name">
+        <img src="logo.png" alt="CO logo" class="logo">
+            <h1>DIGI FARM</h1>
+    </div>
+</div>
+</header>
+    <body>
+        <div class="navbar">
+            <a class="Home" href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="search..."  name="search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <main>
+<section class="product-list">
+    <div class="product" onclick="viewProduct('Tractor', 'A powerful and versatile tractor suitable for various farm tasks such as plowing, planting, and towing.', 100000)">
+                <h2>Tractor</h2>
+               
+                <p>Ksh 100000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+            <!-- Add more product listings here -->
+     <div class="product" onclick="viewProduct('Combine Harvester', 'An advanced combine harvester designed to efficiently harvest crops like wheat, corn, and soybeans. Equipped with cutting-edge technology for optimal grain yield and minimal crop loss.', 25000)">
+                <h2>Combine Harvester</h2>
+                
+                <p>Ksh 25000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" onclick="viewProduct('Seeder', 'A precision seeder ideal for planting seeds with accuracy and uniformity. Features adjustable seed rates and row spacing to accommodate different crop types and planting conditions.', 20000)">
+                <h2>Seeder</h2>
+                
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" onclick="viewProduct('Sprayer', 'A high-performance sprayer for applying fertilizers, herbicides, and pesticides to crops. Equipped with precision spraying technology and adjustable boom widths for efficient and targeted application.', 7000)">
+                <h2>Sprayer</h2>
+
+                <p>Ksh 7000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" onclick="viewProduct('Plow', 'A heavy-duty plow for breaking up and turning over soil in preparation for planting. Designed to handle tough soil conditions and provide consistent depth and furrow shape', 20000)">
+                <h2>Plow</h2>
+
+                <p>Ksh 20000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+
+        </section>
+
+        <P >Go to page <a href="catalog.html">1</a><a href="catalog1.html">,2</a>
+
+        <footer>
+            <div class="container">
+              <p>&copy; 2024 Digi Farm #Making farming affordable #Embracing Technology</p>
+            </div>
+          </footer>
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

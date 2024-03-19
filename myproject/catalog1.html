@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+    <header>
+        <div class="container">
+    <div class="co-name">
+        <img src="logo.png" alt="CO logo" class="logo">
+            <h1>DIGI FARM</h1>
+    </div>
+</div>
+</header>
+    <body>
+        <div class="navbar">
+            <a class="Home" href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="search-container">
+            <form action="/search" method="get">
+                <input type="text" placeholder="search..."  name="search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <main>
+<section class="product-list">
+            <div class="product" onclick="viewProduct('Cultivator', 'A versatile cultivator for weed control and soil aeration. Features adjustable tines and depth settings to effectively manage weeds and improve soil structure.', 25000)">
+                <h2>Cultivator</h2>
+                
+                <p>Ksh 25000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+            
+            <div class="product" onclick="viewProduct('Livestock Trailer', 'A sturdy livestock trailer for transporting cattle, sheep, or other livestock. Designed with safety features and ample ventilation to ensure the well-being of animals during transportation.', 10000)">
+                <h2>Livestock Trailer</h2>
+                
+                <p>Ksh 10000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" onclick="viewProduct('Hay Baler', 'A reliable hay baler for baling hay and straw with efficiency and consistency. Equipped with features such as automatic tying and bale density control for optimal bale quality.', 24000)">
+                <h2>Hay Baler</h2>
+                
+                <p>Ksh 24000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" onclick="viewProduct('Grain Dryer', 'An efficient grain dryer for drying harvested grain to the desired moisture content. Equipped with advanced drying technology and temperature control for preserving grain quality.', 27000)"></div>
+                <h2>Grain Dryer</h2>
+                
+                <p>Ksh 27000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+            <div class="product" onclick="viewProduct('Mower Conditioner', 'A versatile mower conditioner for cutting and conditioning hay or forage crops. Features adjustable cutting widths and conditioning settings to optimize crop drying and quality.', 15000)"></div>
+                <h2>Mower Conditioner</h2>
+                
+                <p>Ksh 15000 per day</p>
+                <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <div class="container">
+              <p>&copy; 2024 Digi Farm #Making farming affordable #Embracing Technology</p>
+            </div>
+          </footer>
+        </main>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
